@@ -1,5 +1,5 @@
 const api = 'B551182/spclMdlrtHospInfoService1/getChildNightMdlrtList1';
-const auth = 'key';
+const auth = 'MJMD6kyAcwn4zDEcbqLnrUmxmTo4vK0BYwnE9DtEA%2FyqKFmuGzDaRAV7RNTIH4BX1aZ9ujBOdLHeFmEhO%2FGcIA%3D%3D';
 const urlBase = 'https://apis.data.go.kr/' + api + '?serviceKey=' + auth +'&numOfRows='+30;
 
 //지역 구분
