@@ -148,7 +148,7 @@ let sendUrl_map = function(sigu, sido, j) {
                         const position = positions[i]; // 현재 처리할 병원 데이터 
                         map.relayout();
                       
-                        geocoder.addressSearch(position.address, function(result, status) {
+                        geocoder.addressSearch(position.address.split(',', 1), function(result, status) {
                             // 정상적으로 검색이 완료됐으면
                             if (status === kakao.maps.services.Status.OK) {
                                 const coords = new kakao.maps.LatLng(result[0].y, result[0].x);      
