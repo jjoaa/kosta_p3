@@ -1,0 +1,126 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+.container {
+    width: 80%; 
+    margin: 0 auto;
+}
+
+
+#list {
+    background-color: #d3e6ff;
+    color: #005fae;
+    padding: 20px;
+    border: 1px solid #005fae;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 30px auto; 
+    position: sticky;
+    top: 0;
+    z-index: 10; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#list label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#list select {
+    min-width: 200px; 
+    padding: 8px;
+    font-size: 14px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#list button {
+    background-color: #007bff;
+    color: white;
+    padding: 4px 8px;
+    font-size: 13px;
+    border-radius: 15px; 
+    border: 1px solid #007bff; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+#list button:hover {
+    background-color: #005fae;
+}
+
+
+table {
+    width: 100%; 
+    max-width: 1200px; 
+    margin-top: 30px;
+    border-collapse: collapse;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #005fae;
+    color: white;
+    font-size: 16px;
+}
+
+td {
+    background-color: #ffffff;
+    color: #333;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+}
+
+.mv {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px; 
+    font-size: 13px;
+    border-radius: 15px; 
+    border: 1px solid #007bff; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.mv:hover {
+    background-color: #005fae;
+}
+
+/* 반응형 디자인 (모바일 최적화) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* 모바일에서 더 넓은 화면을 위한 설정 */
+    }
+
+    table {
+        width: 100%; /* 모바일 화면에서 테이블 너비 */
+    }
+
+    #list {
+        font-size: 14px;
+        padding: 15px;
+    }
+
+    #list select, #list button {
+        padding: 6px;
+        font-size: 12px;
+    }
+}

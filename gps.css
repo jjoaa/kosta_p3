@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 이미지 버튼 스타일 */
+#sickImage {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    width: 300px;
+}
+
+/* GPS 작동하지 않을 때 */
+#noGps {
+    background-color: #d3e6ff;
+    color: #005fae;
+    padding: 20px;
+    border: 1px solid #005fae;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    width: 80%; 
+    max-width: 1200px; 
+    margin: 30px auto; 
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+#noGps label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#noGps select {
+    min-width: 200px; 
+    padding: 8px;
+    font-size: 12px;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#noGps button {
+    background-color: #007bff;
+    color: white;
+    padding: 2px 8px; 
+    font-size: 12px; 
+    border-radius: 15px; 
+    border: 1px solid #007bff; 
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+}
+
+#noGps button:hover {
+    background-color: #005fae;
+}
+
+/* 해당 지역에 병원이 없을 때 */
+#noData {    
+    color: #004085;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    display: none;
+}
+
+/* 지도(map) 스타일 */
+#map {
+    width: 80%; 
+    max-width: 1200px; 
+    height: 400px; 
+    margin: 50px auto; 
+    display: block; 
+    top: 100px 0; 
+}
+
+/* 반응형 디자인 (모바일 최적화) */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    img {
+        width: 80px;
+        height: 80px;
+    }
+
+    #noGps, #noData {
+        font-size: 14px;
+    }
+}

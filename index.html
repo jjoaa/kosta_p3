@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gps</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel ="stylesheet" href="./gps.css">
+</head>
+<body>
+    <div>
+        <img id="sickImage" src="./images/sick.png" onclick="clickImage()"  />
+        <div class="container">
+
+        <div id="noGps"  style = "display:none;">
+            <label for="city">도시:</label>
+            <select id="city" onchange="updateDistricts()"></select>
+            <label for="district"> 구:</label>
+            <select id="district">
+                <option value="">구를 선택하세요</option>
+            </select>
+            <button onclick="first()">검색</button> 
+            <button onclick ="location.href='./list.html'">목록</button>
+        </div>
+        <div id="noData" style="display:none;">해당 지역에 병원이 없습니다 <b></b> 다른 지역을 검색해주세요 </div>
+        <div id="map" style="display:none;" ></div>
+        </div>
+        <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=f510075da7c20034543c5a44253c253b&libraries=services"></script>
+    </div>
+   
+    <script type="text/javascript" src="./AreaDB.js"></script>
+    <script type="text/javascript" src="./find.js"></script>
+    <script type="text/javascript" src="./gps.js"></script>
+
+</body>
+</html>
+ 

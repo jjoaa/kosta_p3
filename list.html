@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>리스트</title> 
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xml2js/0.4.23/xml2js.min.js"></script>
+    <script type="text/javascript" src="./AreaDB.js"></script>
+    <script type="text/javascript" src="./find.js"></script>
+    <script type="text/javascript" src="./list.js"></script>
+    <link rel ="stylesheet" href="./list.css">
+
+</head>
+<body>
+    
+        
+    <div class="container">
+        <!-- 도시, 구 선택 부분 -->
+        <div id="list">
+            <label for="city">도시:</label>
+            <select id="city" onchange="updateDistricts()"></select>
+            <label for="district">구:</label>
+            <select id="district">
+                <option value="">구를 선택하세요</option>
+            </select>
+            <button onclick="submit()">검색</button>
+        </div>
+    
+        <!-- 테이블 -->
+        <table border="1" id="data-table">
+            <thead>
+                <tr>
+                    <th>병원명</th>
+                    <th>주소</th>
+                    <th>전화번호</th>
+                    <th>병원코드</th>
+                    <th>지도</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 데이터 부분 -->
+            </tbody>
+        </table>
+    </div>
+
+
+
+</body>
+</html>

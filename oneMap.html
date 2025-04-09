@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #map {
+            width: 100%;
+            height: 300px;
+        }
+        #content {
+            width: 100%;
+            height: 200px;
+            padding: 10px;
+            border-top: 1px solid #ccc;
+        }
+        #content div {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div id="content">
+        <div><strong>병원이름 :</strong> <span id="hospital-name"></span></div>
+        <div><strong>주소 :</strong> <span id="hospital-addr"></span></div>
+        <div><strong>전화번호 :</strong> <span id="hospital-telno"></span></div>
+        <div><strong>병원 : </strong> <span id="hospital-code"></span></div>
+    </div>
+    <script type="text/javascript" src="http://dapi.kakao.com/v2/maps/sdk.js?appkey=f510075da7c20034543c5a44253c253b&libraries=services"></script>
+    <script src="./list.js"></script> 
+
+</body>
+</html>
