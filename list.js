@@ -46,7 +46,7 @@ const mvPage = () => {
 
             const hospitalInfo = {
                 name: hName,
-                addr: hAddr,
+                addr: hAddr.split(',', 1),
                 telno: hTell,
                 code: hCode
             };
